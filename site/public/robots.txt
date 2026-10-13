@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://brouillon.vialet.app/sitemap.xml
