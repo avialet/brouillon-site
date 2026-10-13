@@ -58,7 +58,7 @@
     },
     {
       "q": "Et si je perds la clé ?",
-      "r": "Les brouillons chiffrés deviennent illisibles, sans récupération possible : il n'y a ni compte ni serveur pour la retrouver. Pour changer de Mac, désactivez la protection avant de copier la base, ou transférez aussi votre trousseau. À l'activation, une copie en clair d'avant le chiffrement est gardée à côté de la base."
+      "r": "Les brouillons chiffrés deviennent illisibles, sans récupération possible : il n'y a ni compte ni serveur pour la retrouver. Pour changer de Mac, désactivez la protection avant de copier la base, ou transférez aussi votre trousseau. À l'activation, une copie en clair d'avant le chiffrement est gardée à côté de la base (brouillon.sqlite.avant-chiffrement) : vérifiez que vos brouillons s'ouvrent bien, puis supprimez-la, car elle n'est pas chiffrée."
     }
   ],
   "libres": {
