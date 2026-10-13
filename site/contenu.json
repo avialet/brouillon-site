@@ -1,0 +1,57 @@
+{
+  "app": "Brouillon",
+  "affiche": "Brouillon",
+  "domaine": "brouillon.vialet.app",
+  "depot": "avialet/brouillon",
+  "accroche": "Le bloc-notes qui comprend ce que vous y collez.",
+  "titre": [
+    "Le bloc-notes qui comprend",
+    "ce que vous y collez."
+  ],
+  "sous_titre": "Collez un JSON, une URL ou un texte à nettoyer. Brouillon reconnaît ce que c'est et propose la suite.",
+  "hero": {
+    "image": "fenetre",
+    "alt": "Brouillon avec un JSON collé, reconnu dans la colonne de droite"
+  },
+  "fonctions": [
+    {
+      "titre": "Il reconnaît ce que vous collez",
+      "texte": "JSON, lien, couleur, code, chemin, nombre, timestamp, base64 : une pastille le dit et les suggestions suivent. Les compteurs sont toujours là.",
+      "image": "fenetre",
+      "alt": "Un JSON brut dans Brouillon, reconnu, avec les suggestions de transformation"
+    },
+    {
+      "titre": "Une transformation, un clic, annulable",
+      "texte": "Formater un JSON, décoder une URL, changer la casse, trier ou dédoublonner des lignes : vingt-deux transformations, toutes réversibles.",
+      "image": "detail",
+      "alt": "Le même JSON après formatage, dans Brouillon"
+    }
+  ],
+  "captures": [
+    {
+      "nom": "fenetre",
+      "source": "base-1"
+    },
+    {
+      "nom": "detail",
+      "source": "base-2"
+    }
+  ],
+  "confidentialite": "Chaque brouillon est enregistré au fil de la frappe dans un fichier SQLite sur votre Mac, et nulle part ailleurs. Le seul appel réseau est la lecture de la dernière version publiée sur GitHub, désactivable dans les réglages.",
+  "donnees": "~/Library/Application Support/Brouillon/brouillon.sqlite",
+  "faq": [
+    {
+      "q": "Pourquoi cet avertissement au premier lancement ?",
+      "r": "Brouillon n'est ni signée avec un certificat Apple Developer ni notarisée, alors macOS bloque le premier lancement. Depuis macOS 15, le contournement « Contrôle-clic, puis Ouvrir » n'existe plus : le passage par Réglages Système est le seul chemin."
+    },
+    {
+      "q": "Comment vérifier le fichier téléchargé ?",
+      "r": "Chaque version publie son empreinte SHA-256. Dans le dossier du téléchargement : <code>shasum -a 256 -c Brouillon-X.Y.Z.dmg.sha256</code>."
+    }
+  ],
+  "libres": {
+    "apres_hero": "",
+    "apres_fonctions": "",
+    "avant_installer": ""
+  }
+}
