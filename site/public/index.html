@@ -120,6 +120,21 @@
       <div>Chaque version publie son empreinte SHA-256. Dans le dossier du téléchargement : <code>shasum -a 256 -c Brouillon-X.Y.Z.dmg.sha256</code>.</div>
     </details>
     
+    <details class="question">
+      <summary>Comment reprendre mes notes de l&#x27;app Notes ?</summary>
+      <div>Fichier › Importer depuis Notes…, puis cochez les dossiers. Brouillon lit les notes en lecture seule (rien n'est modifié dans Notes), ignore celles verrouillées par un mot de passe, et ne crée pas de doublon si vous relancez. macOS demande d'abord l'autorisation dans Réglages Système › Confidentialité et sécurité › Automatisation.</div>
+    </details>
+    
+    <details class="question">
+      <summary>Mes brouillons sont-ils chiffrés ?</summary>
+      <div>Oui depuis la version 0.3.0 (activé d’office sur une nouvelle installation, proposé aux bases existantes) : titres et textes sont chiffrés sur le disque (AES-GCM 256 bits) avec une clé rangée dans votre trousseau de session, lue seulement après Touch ID ou le mot de passe du Mac. Brouillon se verrouille au lancement, après quelques minutes d'inactivité, à la mise en veille et au verrouillage de l'écran. Les dates et le nombre de brouillons ne sont pas chiffrés. L'app étant signée sans certificat Apple Developer, la clé vit dans le trousseau classique : une autre app de votre session peut la demander (macOS vous demande alors l'autorisation).</div>
+    </details>
+    
+    <details class="question">
+      <summary>Et si je perds la clé ?</summary>
+      <div>Les brouillons chiffrés deviennent illisibles, sans récupération possible : il n'y a ni compte ni serveur pour la retrouver. Pour changer de Mac, désactivez la protection avant de copier la base, ou transférez aussi votre trousseau. À l'activation, une copie en clair d'avant le chiffrement est gardée à côté de la base (brouillon.sqlite.avant-chiffrement) : vérifiez que vos brouillons s'ouvrent bien, puis supprimez-la, car elle n'est pas chiffrée.</div>
+    </details>
+    
   </section>
 
   <section class="duo" aria-label="Confidentialité et code source">
